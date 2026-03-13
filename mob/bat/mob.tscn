@@ -8,9 +8,17 @@ radius = 0.34311667
 
 [node name="Mob" type="RigidBody3D" unique_id=342322109]
 gravity_scale = 0.0
+lock_rotation = true
 script = ExtResource("1_ih2ng")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=830866544]
 shape = SubResource("SphereShape3D_1he7g")
 
 [node name="bat_model" parent="." unique_id=1382437750 instance=ExtResource("2_6oj7c")]
+
+[node name="Timer" type="Timer" parent="." unique_id=1284107965]
+unique_name_in_owner = true
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b7t2rjdehguui" path="res://mob/bat/bat_model_bat_palette.png" id="3_vgr6s"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_030dj"]
+resource_local_to_scene = true
 resource_name = "bat_mat"
 cull_mode = 2
 albedo_texture = ExtResource("3_vgr6s")
@@ -51,7 +52,7 @@ animation = &"Idle"
 [sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_shx3p"]
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_scfiv"]
-graph_offset = Vector2(-471.1, 97.600006)
+graph_offset = Vector2(-160, 97.600006)
 nodes/Idle/node = SubResource("AnimationNodeAnimation_vgr6s")
 nodes/Idle/position = Vector2(-160, 160)
 nodes/Hurt/node = SubResource("AnimationNodeAnimation_030dj")
